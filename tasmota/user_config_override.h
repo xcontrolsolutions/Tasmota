@@ -352,11 +352,16 @@
 // -- Rules or Script  ----------------------------
 // Select none or only one of the below defines USE_RULES or USE_SCRIPT
 #undef USE_RULES 
-#define USE_RULES                                // Add support for rules (+8k code)
-  #define USE_EXPRESSION                         // Add support for expression evaluation in rules (+3k2 code, +64 bytes mem)
-    #define SUPPORT_IF_STATEMENT                 // Add support for IF statement in rules (+4k2 code, -332 bytes mem)
+//#define USE_RULES                                // Add support for rules (+8k code)
+//  #define USE_EXPRESSION                         // Add support for expression evaluation in rules (+3k2 code, +64 bytes mem)
+//    #define SUPPORT_IF_STATEMENT                 // Add support for IF statement in rules (+4k2 code, -332 bytes mem)
 
-#undef USE_SCRIPT
+//#undef USE_SCRIPT
+
+#define USE_SCRIPT                               // Add support for script (+17k code)
+  //#define USE_SCRIPT_FATFS 4                     // Script: Add FAT FileSystem Support
+
+  #define SUPPORT_MQTT_EVENT                     // Support trigger event with MQTT subscriptions (+3k5 code)
 
 // -- Optional modules ----------------------------
 #undef ROTARY_V1                                // Add support for Rotary Encoder as used in MI Desk Lamp (+0k8 code)
@@ -517,6 +522,7 @@
                                                  // Reference: https://cdn-learn.adafruit.com/downloads/pdf/adafruit-led-backpack.pdf
     // #define SEVENSEG_ADDRESS1     0x70      // No longer used.  Use MTX_ADDRESS1 - MTX_ADDRESS8 instead to specify I2C address of sevenseg displays
     #define USE_DISPLAY_SH1106                   // [DisplayModel 7] [I2cDriver6] Enable SH1106 Oled 128x64 display (I2C addresses 0x3C and 0x3D)
+    #define USE_DT_VARS
 #endif  // USE_I2C
 
 // -- SPI sensors ---------------------------------
