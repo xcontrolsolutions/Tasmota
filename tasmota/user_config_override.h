@@ -362,6 +362,9 @@
   //#define USE_SCRIPT_FATFS 4                     // Script: Add FAT FileSystem Support
 
   #define SUPPORT_MQTT_EVENT                     // Support trigger event with MQTT subscriptions (+3k5 code)
+  #define USE_BUTTON_EVENT
+  #define USE_SCRIPT_STATUS
+  
 
 // -- Optional modules ----------------------------
 #undef ROTARY_V1                                // Add support for Rotary Encoder as used in MI Desk Lamp (+0k8 code)
