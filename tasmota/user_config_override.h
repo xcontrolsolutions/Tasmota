@@ -79,7 +79,7 @@
 #undef MQTT_USE
 #define MQTT_USE               true              // [SetOption3] Select default MQTT use (false = Off, true = On)
 #undef MQTT_RESULT_COMMAND
-#define MQTT_RESULT_COMMAND    true             // [SetOption4]  Switch between MQTT RESULT or COMMAND
+#define MQTT_RESULT_COMMAND    false             // [SetOption4]  Switch between MQTT RESULT or COMMAND
 //setOption 5-7 DNE
 #undef TEMP_CONVERSION
 #define TEMP_CONVERSION        true             // [SetOption8] Return temperature in (false = Celsius or true = Fahrenheit)
@@ -158,7 +158,7 @@
 #undef APP_NO_RELAY_SCAN
 #define APP_NO_RELAY_SCAN      false             // [SetOption63] Don't scan relay power state at restart
 #undef MQTT_INDEX_SEPARATOR
-#define MQTT_INDEX_SEPARATOR   false             // [SetOption64] Enable "_" instead of "-" as sensor index separator
+#define MQTT_INDEX_SEPARATOR    true             // [SetOption64] Enable "_" instead of "-" as sensor index separator
 #undef APP_DISABLE_POWERCYCLE
 #define APP_DISABLE_POWERCYCLE false             // [SetOption65] Disable fast power cycle detection for device reset
 #undef MQTT_TUYA_RECEIVED
@@ -365,6 +365,14 @@
   #define USE_BUTTON_EVENT
   #define USE_SCRIPT_STATUS
   #define USE_SCRIPT_JSON_EXPORT
+  #define USE_SCRIPT_TIMER
+  #define USE_SCRIPT_SUB_COMMAND
+  #define SCRIPT_POWER_SECTION
+  #define SCRIPT_STRIP_COMMENTS
+  #define USE_SCRIPT_GLOBVARS
+
+
+
 
 // -- Optional modules ----------------------------
 #undef ROTARY_V1                                // Add support for Rotary Encoder as used in MI Desk Lamp (+0k8 code)
