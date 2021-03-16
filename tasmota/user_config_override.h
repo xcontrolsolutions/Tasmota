@@ -297,7 +297,7 @@
 
 // -- MQTT - Telemetry ----------------------------
 #undef TELE_PERIOD
-#define TELE_PERIOD            60               // [TelePeriod] Telemetry (0 = disable, 10 - 3600 seconds)
+#define TELE_PERIOD            10               // [TelePeriod] Telemetry (0 = disable, 10 - 3600 seconds)
 #undef TELE_ON_POWER
 #define TELE_ON_POWER          false             // [SetOption59] send tele/STATE together with stat/RESULT (false = Disable, true = Enable)
 
@@ -370,6 +370,7 @@
   #define SCRIPT_POWER_SECTION
   #define SCRIPT_STRIP_COMMENTS
   #define USE_SCRIPT_GLOBVARS
+  #define USE_WEBSEND_RESPONSE
 
 
 
