@@ -151,6 +151,11 @@
 #define TELE_ON_POWER          false             // [SetOption59] send tele/STATE together with stat/RESULT (false = Disable, true = Enable)
 #undef APP_NORMAL_SLEEP
 #define APP_NORMAL_SLEEP       false             // [SetOption60] Enable normal sleep instead of dynamic sleep
+#define APP_NORMAL_SLEEP       false             // [SetOption60] Enable normal sleep instead of dynamic sleep
+#undef APP_SLEEP
+#define APP_SLEEP              250               // [Sleep] Sleep time to lower energy consumption (0 = Off, 1 - 250 mSec),
+#undef PWM_MAX_SLEEP
+#define PWM_MAX_SLEEP          250               // Sleep will be lowered to this value when light is on, to avoid flickering, and when buzzer is on for better on/off period accuracy
 #undef MQTT_BUTTON_SWITCH_FORCE_LOCAL
 #define MQTT_BUTTON_SWITCH_FORCE_LOCAL   false   // [SetOption61] Force local operation when button/switch topic is set (false = off, true = on)
 #undef MQTT_NO_HOLD_RETAIN

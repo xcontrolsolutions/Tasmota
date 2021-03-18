@@ -3,6 +3,7 @@ script > venue="Unknown";
 script > grp="Development";
 
 Backlog
+DeviceName SPS30_SENSOR;
 SetOption73 1;
 DisplayMode 0;
 DisplayModel 7;
