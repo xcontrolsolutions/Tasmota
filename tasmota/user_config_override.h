@@ -51,7 +51,7 @@
 
 // -- Ota -----------------------------------------
 #undef OTA_URL
-#define OTA_URL                "http://10.101.3.1:8011/"  // [OtaUrl]
+#define OTA_URL                "http://10.101.3.1:5000/tasmota-SPS30.bin"  // [OtaUrl]
 
 
 //////////SPS30 Firmware Setting Overrides//////////
